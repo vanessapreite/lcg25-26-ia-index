@@ -1,0 +1,11 @@
+.hero-header {
+    width: 100vw;          /* tutta la larghezza della viewport */
+    max-width: 100%;       /* evita di sbordare */
+    overflow: hidden;      /* niente scroll orizzontale */
+  }
+  
+  .hero-img {
+    width: 100%;           /* si adatta alla larghezza */
+    height: auto;          /* mantiene proporzioni naturali */
+    display: block;        /* elimina spazi bianchi sotto l'immagine */
+  }
