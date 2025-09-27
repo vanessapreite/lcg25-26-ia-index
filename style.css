@@ -32,10 +32,10 @@ body {
     margin: 0;             /* rimuove margini default */
 }
 
-.info h3 {
+.info h2 {
     font-size: 36px;
     margin: 0;
-    color: aqua;
+    color: whitesmoke;
 }    
 
 .info p {
@@ -43,22 +43,27 @@ body {
     margin: 0;
 }
 .info ul {
-    padding-left: 20px;
+    padding-top: 20px;
 }
 
 .info ul li {
-    list-style: square;
+    list-style: none;
     margin-bottom: 10px;
 }
 
 .info ul li a {
-    margin-left: 7%;
-    margin-top: 20px; 
-    color: aqua;
-    text-decoration: underline;
+    display: inline-block;        /* permette padding e sfondo */
+    padding: 12px 24px;           /* dimensioni del bottone */
+    background-color: #b53389;    /* colore di sfondo */
+    color: white;                 /* colore del testo */
+    text-decoration: none;        /* rimuove la sottolineatura */
+    
+    border-radius: 40px;           /* angoli arrotondati */
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
 }
 .info ul li a:hover {
-    color: yellow;
+    color: darkblue;
 }
 
 .logo {
@@ -93,7 +98,7 @@ body {
 }
 
 .navbar ul li a:hover {
-    color: yellow;
+    color: #b53389;
 }
 
 
