@@ -1,42 +1,100 @@
-*{
+* {
     margin:0;
     padding:0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: azure;
+}
+body {
+    background: url(Images/Sfondo.jpg) center/cover no-repeat;
 }
 
-.main{
+.main {
     width: 100%;
-    background: url(lcg25-26-ia-index/Images/Sfondo.jpg);
     background-position: center;
-    background-size:cover;
+    background-size: cover;
     height: 100vh;
     position: relative;
     font-family: sans-serif;
 }
 
-.navbar
-{
+.info {
+    margin-left: 7%;
+    margin-top: 20px; 
+    color: lightskyblue;
+    color: white;          /* testo visibile sullo sfondo */
+    display: flex;
+    flex-direction: column; /* disposizione verticale */
+    gap: 10px;
+}
+
+.info h1 {
+    font-size: 64px;       /* più grande */
+    margin: 0;             /* rimuove margini default */
+}
+
+.info h3 {
+    font-size: 36px;
+    margin: 0;
+    color: aqua;
+}    
+
+.info p {
+    font-size: 20px;
+    margin: 0;
+}
+.info ul {
+    padding-left: 20px;
+}
+
+.info ul li {
+    list-style: square;
+    margin-bottom: 10px;
+}
+
+.info ul li a {
+    margin-left: 7%;
+    margin-top: 20px; 
+    color: aqua;
+    text-decoration: underline;
+}
+.info ul li a:hover {
+    color: yellow;
+}
+
+.logo {
+    width: 150px;   /* larghezza desiderata, ad esempio 80px */
+    height: auto;  /* mantiene le propozioni */
+    display: block;
+}
+
+
+
+.navbar {
     width: 86%;
     display: flex;
     margin: auto;
-    padding: 15px 0;
+    padding: 50px 0;
     align-items: center;
     justify-content: space-between;
 }
 
-ul{
-    margin-top: -4%;
-}
 
-ul li{
+.navbar ul li {
     list-style: none;
     display: inline-block;
     padding: 10px 16px;
 }
 
-ul li a{
+.navbar ul li a {
     font-size: 16px;
     font-weight: bold;
     text-decoration: none;
-    color: darkslategrey;
-    margin-top: -3%;
+    transition: .4s ease;
 }
+
+.navbar ul li a:hover {
+    color: yellow;
+}
+
+
+
